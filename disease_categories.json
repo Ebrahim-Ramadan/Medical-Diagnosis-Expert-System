@@ -1,0 +1,76 @@
+{
+    "Ear, Nose, and Throat (ENT) Diseases": [
+        "Otitis Media (Middle Ear Infection)",
+        "Tinnitus",
+        "Sinusitis",
+        "Rhinitis (Common Cold)",
+        "Pharyngitis (Sore Throat)",
+        "Laryngitis"
+    ],
+    "Dental and Oral Diseases": [
+        "Dental caries (tooth decay)",
+        "Periodontal disease (gum disease)",
+        "Gingivitis",
+        "Oral thrush (candidiasis)",
+        "Temporomandibular joint disorder (TMJ disorder)"
+    ],
+    "Musculoskeletal Diseases": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Osteoporosis",
+        "Sprains and strains",
+        "Tendonitis"
+    ],
+    "Cardiopulmonary Diseases": [
+        "Coronary artery disease",
+        "Hypertension (high blood pressure)",
+        "Congestive heart failure",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Asthma",
+        "Pneumonia"
+    ],
+    "Gastrointestinal Diseases": [
+        "Gastroesophageal reflux disease (GERD)",
+        "Peptic ulcer disease",
+        "Irritable bowel syndrome (IBS)",
+        "Crohn's disease",
+        "Ulcerative colitis",
+        "Hepatitis"
+    ],
+    "Neurological Diseases": [
+        "Stroke",
+        "Alzheimer's disease",
+        "Parkinson's disease",
+        "Epilepsy",
+        "Migraine",
+        "Multiple sclerosis"
+    ],
+    "Endocrine Diseases": [
+        "Diabetes mellitus type 2",
+        "Hypothyroidism",
+        "Hyperthyroidism (Graves' disease)",
+        "Addison's disease",
+        "Cushing's syndrome"
+    ],
+    "Urogenital Diseases": [
+        "Chronic kidney disease",
+        "Urinary tract infection (UTI)",
+        "Benign prostatic hyperplasia (BPH)",
+        "Polycystic ovary syndrome (PCOS)",
+        "Erectile dysfunction (impotence)"
+    ],
+    "Ophthalmic Diseases": [
+        "Cataracts",
+        "Glaucoma",
+        "Age-related macular degeneration (AMD)",
+        "Diabetic retinopathy",
+        "Conjunctivitis (pink eye)"
+    ],
+    "Dermatological Diseases": [
+        "Acne vulgaris",
+        "Eczema",
+        "Psoriasis",
+        "Dermatitis",
+        "Skin infections (bacterial, viral, fungal)"
+    ]
+}

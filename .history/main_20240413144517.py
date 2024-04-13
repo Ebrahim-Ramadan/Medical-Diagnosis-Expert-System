@@ -1,6 +1,5 @@
 import json
 from logic import knowledge
-
 with open('disease_categories.json', 'r') as file:
     disease_categories = json.load(file)
 
