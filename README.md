@@ -29,5 +29,59 @@ The project leverages the Experta library, which provides a powerful framework f
 - **Modularity and Extensibility**: Experta supports modular design, enabling the organization of rules into separate classes or modules based on functionality or domain. This makes it straightforward to scale the system by adding new rules or expanding existing ones.
 
 ---
+Sure, here's a more detailed explanation:
 
-Feel free to customize and expand upon this draft to better fit your project's specifics and requirements!
+## Deployment
+
+### File System Layout
+
+```
+expert_system_project/
+│
+├── main.py
+├── logic.py
+├── requirements.txt
+├── diseases_categories.json
+└── diseases_symptoms.json
+```
+
+- **main.py:** This file contains the driver code for running the expert system. It prompts the user to select the organ system for diagnosis and interacts with the logic module to perform the diagnosis.
+
+- **logic.py:** The logic module contains the implementation of the expert system, including the knowledge base and rules defined using the experta library.
+
+- **requirements.txt:** This file specifies the dependencies required for the project. Currently, it includes the experta library.
+
+- **diseases_categories.json:** This JSON file contains the categories of diseases and their associated diseases. Each category is mapped to a list of diseases within that category.
+
+- **diseases_symptoms.json:** This JSON file contains the symptoms associated with each disease. Each disease is mapped to a list of symptoms.
+
+### Instructions
+
+1. **Clone the Repository:** Clone the project repository to your local machine using the provided repository URL.
+
+    ```bash
+    git clone <repository_url>
+    ```
+
+2. **Install Dependencies:** Navigate to the project directory and install the required dependencies using pip.
+
+    ```bash
+    cd expert_system_project
+    pip install -r requirements.txt
+    ```
+
+3. **Run the Program:** Execute the main.py script to start the expert system.
+
+    ```bash
+    python main.py
+    ```
+
+4. **Follow On-Screen Prompts:** Follow the prompts displayed by the program to select the organ system and provide symptom information for disease diagnosis.
+
+5. **View Results:** After providing symptom information, the program will display the most probable disease(s) based on the input.
+
+### Example Usage
+
+```bash
+python main.py
+```
