@@ -1,6 +1,6 @@
-{
+cat = {
     "Ear, Nose, and Throat (ENT) Diseases": [
-        "Otitis media (middle ear infection)",
+        "Otitis Media (Middle Ear Infection)",
         "Tinnitus",
         "Sinusitis",
         "Rhinitis (Common Cold)",
@@ -74,3 +74,5 @@
         "Skin infections (bacterial, viral, fungal)"
     ]
 }
+
+print()

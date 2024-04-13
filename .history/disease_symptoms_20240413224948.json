@@ -1,0 +1,380 @@
+{
+    "Otitis media (middle ear infection)": [
+        "Ear pain",
+        "Fluid drainage from the ear",
+        "Reduced hearing",
+        "Fever",
+        "Irritability (in children)"
+    ],
+    "Tinnitus": [
+        "Ringing, buzzing, or humming sounds in the ears",
+        "Hearing loss",
+        "Sensation of fullness in the ears",
+        "Headache",
+        "Dizziness"
+    ],
+    "Sinusitis": [
+        "Nasal congestion",
+        "Facial pain or pressure",
+        "Headache",
+        "Thick nasal discharge",
+        "Cough"
+    ],
+    "Rhinitis (Common Cold)": [
+        "Runny or stuffy nose",
+        "Sneezing",
+        "Sore throat",
+        "Cough",
+        "Fatigue"
+    ],
+    "Pharyngitis (Sore Throat)": [
+        "Sore, scratchy throat",
+        "Difficulty swallowing",
+        "Swollen tonsils",
+        "Fever",
+        "Hoarseness"
+    ],
+    "Laryngitis": [
+        "Hoarseness or loss of voice",
+        "Sore throat",
+        "Dry cough",
+        "Difficulty swallowing",
+        "Tickling sensation in the throat"
+    ],
+    "Dental caries (tooth decay)": [
+        "Toothache",
+        "Tooth sensitivity",
+        "Visible pits or holes in the teeth",
+        "Bad breath",
+        "Tooth discoloration"
+    ],
+    "Periodontal disease (gum disease)": [
+        "Swollen, tender gums",
+        "Bleeding gums",
+        "Receding gums",
+        "Persistent bad breath",
+        "Loose teeth"
+    ],
+    "Gingivitis": [
+        "Red, swollen gums",
+        "Bleeding gums, especially when brushing or flossing",
+        "Tender gums",
+        "Bad breath",
+        "Receding gums"
+    ],
+    "Oral thrush (candidiasis)": [
+        "White patches on the tongue, inner cheeks, or roof of the mouth",
+        "Sore throat",
+        "Difficulty swallowing",
+        "Cracked corners of the mouth",
+        "Loss of taste"
+    ],
+    "Temporomandibular joint disorder (TMJ disorder)": [
+        "Jaw pain or tenderness",
+        "Clicking or popping sounds in the jaw",
+        "Difficulty chewing",
+        "Locking of the jaw",
+        "Headaches or earaches"
+    ],
+    "Osteoarthritis": [
+        "Joint pain",
+        "Stiffness",
+        "Swelling",
+        "Loss of flexibility",
+        "Grating sensation in the joint"
+    ],
+    "Rheumatoid arthritis": [
+        "Joint pain and swelling",
+        "Stiffness, especially in the morning",
+        "Fatigue",
+        "Fever",
+        "Loss of appetite"
+    ],
+    "Osteoporosis": [
+        "Bone pain or tenderness",
+        "Fractures, especially in the spine, wrist, or hip",
+        "Loss of height over time",
+        "Stooped posture",
+        "Bone fractures occurring more easily than expected"
+    ],
+    "Sprains and strains": [
+        "Pain",
+        "Swelling",
+        "Bruising",
+        "Limited range of motion",
+        "Muscle weakness"
+    ],
+    "Tendonitis": [
+        "Pain and tenderness",
+        "Swelling",
+        "Stiffness",
+        "Weakness",
+        "Difficulty moving the affected area"
+    ],
+    "Coronary artery disease": [
+        "Chest pain or discomfort (angina)",
+        "Shortness of breath",
+        "Heart palpitations",
+        "Weakness or fatigue",
+        "Nausea"
+    ],
+    "Hypertension (high blood pressure)": [
+        "Headache",
+        "Shortness of breath",
+        "Nosebleeds",
+        "Vision changes",
+        "Fatigue"
+    ],
+    "Congestive heart failure": [
+        "Shortness of breath",
+        "Fatigue",
+        "Swelling in the legs, ankles, or feet",
+        "Rapid or irregular heartbeat",
+        "Persistent cough or wheezing"
+    ],
+    "Chronic obstructive pulmonary disease (COPD)": [
+        "Shortness of breath",
+        "Wheezing",
+        "Chest tightness",
+        "Chronic cough",
+        "Frequent respiratory infections"
+    ],
+    "Asthma": [
+        "Shortness of breath",
+        "Wheezing",
+        "Coughing",
+        "Chest tightness",
+        "Difficulty sleeping due to coughing or wheezing"
+    ],
+    "Pneumonia": [
+        "Cough",
+        "Fever",
+        "Shortness of breath",
+        "Chest pain",
+        "Fatigue"
+    ],
+    "Gastroesophageal reflux disease (GERD)": [
+        "Heartburn",
+        "Regurgitation of food or sour liquid",
+        "Difficulty swallowing",
+        "Chest pain",
+        "Coughing or wheezing"
+    ],
+    "Peptic ulcer disease": [
+        "Abdominal pain, often described as burning or gnawing",
+        "Feeling full or bloated",
+        "Belching",
+        "Heartburn",
+        "Nausea or vomiting"
+    ],
+    "Irritable bowel syndrome (IBS)": [
+        "Abdominal pain or cramping",
+        "Bloating",
+        "Gas",
+        "Diarrhea or constipation, or both",
+        "Mucus in the stool"
+    ],
+    "Crohn's disease": [
+        "Diarrhea",
+        "Abdominal pain and cramping",
+        "Fatigue",
+        "Weight loss",
+        "Fever"
+    ],
+    "Ulcerative colitis": [
+        "Diarrhea",
+        "Abdominal pain and cramping",
+        "Rectal bleeding",
+        "Urgency to defecate",
+        "Weight loss"
+    ],
+    "Hepatitis": [
+        "Fatigue",
+        "Flu-like symptoms",
+        "Dark urine",
+        "Pale stool",
+        "Abdominal pain"
+    ],
+    "Stroke": [
+        "Sudden numbness or weakness of the face, arm, or leg",
+        "Sudden confusion or trouble speaking",
+        "Sudden trouble seeing in one or both eyes",
+        "Sudden trouble walking, dizziness, loss of balance or coordination",
+        "Sudden severe headache with no known cause"
+    ],
+    "Alzheimer's disease": [
+        "Memory loss",
+        "Difficulty performing familiar tasks",
+        "Problems with language",
+        "Disorientation to time and place",
+        "Poor or decreased judgment"
+    ],
+    "Parkinson's disease": [
+        "Tremor",
+        "Slowed movement (bradykinesia)",
+        "Rigid muscles",
+        "Impaired posture and balance",
+        "Loss of automatic movements"
+    ],
+    "Epilepsy": [
+        "Seizures",
+        "Temporary confusion",
+        "Uncontrollable jerking movements of the arms and legs",
+        "Loss of consciousness or awareness",
+        "Psychic symptoms such as fear, anxiety, or deja vu"
+    ],
+    "Migraine": [
+        "Intense headache",
+        "Nausea",
+        "Vomiting",
+        "Sensitivity to light and sound",
+        "Aura (visual disturbances)"
+    ],
+    "Multiple sclerosis": [
+        "Fatigue",
+        "Numbness or weakness in one or more limbs",
+        "Tingling or pain",
+        "Blurred or double vision",
+        "Poor coordination or unsteady gait"
+    ],
+    "Diabetes mellitus type 2": [
+        "Increased thirst",
+        "Frequent urination",
+        "Increased hunger",
+        "Unintended weight loss",
+        "Fatigue"
+    ],
+    "Hypothyroidism": [
+        "Fatigue",
+        "Increased sensitivity to cold",
+        "Constipation",
+        "Dry skin",
+        "Weight gain"
+    ],
+    "Hyperthyroidism (Graves' disease)": [
+        "Rapid heartbeat (tachycardia)",
+        "Tremor",
+        "Unintentional weight loss",
+        "Increased appetite",
+        "Sweating"
+    ],
+    "Addison's disease": [
+        "Fatigue",
+        "Muscle weakness",
+        "Weight loss",
+        "Low blood pressure",
+        "Darkening of the skin"
+    ],
+    "Cushing's syndrome": [
+        "Weight gain",
+        "Round face",
+        "Increased fat around the neck",
+        "Thinning of the arms and legs",
+        "Easy bruising"
+    ],
+    "Chronic kidney disease": [
+        "Nausea",
+        "Vomiting",
+        "Loss of appetite",
+        "Fatigue and weakness",
+        "Sleep problems"
+    ],
+    "Urinary tract infection (UTI)": [
+        "Strong, persistent urge to urinate",
+        "Burning sensation when urinating",
+        "Passing frequent, small amounts of urine",
+        "Cloudy, dark, or strong-smelling urine",
+        "Pain in the lower abdomen or back"
+    ],
+    "Benign prostatic hyperplasia (BPH)": [
+        "Frequent or urgent need to urinate",
+        "Increased frequency of urination at night (nocturia)",
+        "Difficulty starting urination",
+        "Weak urine stream or a stream that stops and starts",
+        "Inability to completely empty the bladder"
+    ],
+    "Polycystic ovary syndrome (PCOS)": [
+        "Irregular periods or no periods at all",
+        "Heavy periods",
+        "Excess hair growth",
+        "Acne",
+        "Weight gain"
+    ],
+    "Erectile dysfunction (impotence)": [
+        "Difficulty achieving or maintaining an erection",
+        "Reduced sexual desire",
+        "Premature ejaculation",
+        "Delayed ejaculation",
+        "Anorgasmia (difficulty reaching orgasm)"
+    ],
+    "Cataracts": [
+        "Cloudy or blurred vision",
+        "Difficulty seeing at night",
+        "Sensitivity to light",
+        "Faded colors",
+        "Frequent changes in eyeglass prescription"
+    ],
+    "Glaucoma": [
+        "Gradual loss of peripheral vision",
+        "Tunnel vision",
+        "Blurred vision",
+        "Halos around lights",
+        "Severe eye pain"
+    ],
+    "Age-related macular degeneration (AMD)": [
+        "Blurred or distorted central vision",
+        "Straight lines appearing wavy or crooked",
+        "Reduced color perception",
+        "Difficulty recognizing faces",
+        "Dark or empty areas in your central vision"
+    ],
+    "Diabetic retinopathy": [
+        "Blurred vision",
+        "Floaters",
+        "Impaired color vision",
+        "Dark or empty areas in your vision",
+        "Difficulty seeing at night"
+    ],
+    "Conjunctivitis (pink eye)": [
+        "Redness in the white of the eye or inner eyelid",
+        "Increased tearing",
+        "Thick, yellow discharge that crusts over the eyelashes",
+        "Itching or burning sensation",
+        "Gritty feeling in the eye"
+    ],
+    "Acne vulgaris": [
+        "Blackheads",
+        "Whiteheads",
+        "Papules",
+        "Pustules",
+        "Cysts"
+    ],
+    "Eczema": [
+        "Dry, sensitive skin",
+        "Intense itching",
+        "Red, inflamed skin",
+        "Recurring rash",
+        "Scaly areas"
+    ],
+    "Psoriasis": [
+        "Red patches of skin covered with thick, silvery scales",
+        "Small scaling spots",
+        "Dry, cracked skin that may bleed",
+        "Itching, burning, or soreness",
+        "Thickened, pitted, or ridged nails"
+    ],
+    "Dermatitis": [
+        "Red, swollen, and itchy skin",
+        "Blisters",
+        "Crusting or oozing",
+        "Rash",
+        "Scaling"
+    ],
+    "Skin infections (bacterial, viral, fungal)": [
+        "Redness",
+        "Swelling",
+        "Pain",
+        "Warmth",
+        "Pus-filled lesions"
+    ]
+}

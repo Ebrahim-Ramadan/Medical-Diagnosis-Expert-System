@@ -48,6 +48,6 @@ class knowledge(KnowledgeEngine):
         print(
             f"The most probable Diseases are: {self.maximum_possible_diseases}")
 
-    @Rule(NOT(Fact(probable_disease=W())), NOT(Fact(probable_diseases=W())), salience=2)
+    @Rule(NOT(Fact(probable_disease=W())), NOT(Fact(probable_disease=W())), salience=2)
     def not_matched(self):
         print("Sorry Couldn't determine what is your most probable disease. \nYou can ask a real doctor for such case!\nOr you can diagnose in another specialization")

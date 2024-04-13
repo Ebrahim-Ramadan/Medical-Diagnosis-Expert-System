@@ -33,8 +33,8 @@ def choose_diagnose():
                         9. Ophthalmic Diseases
                         10. Dermatological Diseases
 
-                        For each symptom answer with (yes, no)
-                        Choose from (1 - 10): """))
+                        Choose from (1 - 10)
+                        """))
             validate_Choice(choose)
             return choose
         except RangeError as e:
@@ -55,6 +55,7 @@ def processs_data():
 
 if __name__ == "__main__":
     processs_data()
+    print(disease_categories, disease_symptoms)
     while True:
         choose = choose_diagnose()
         engine = knowledge(disease_categories, disease_symptoms, choose)

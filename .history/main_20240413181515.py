@@ -1,8 +1,6 @@
 import json
 from logic import knowledge
 
-# Handleing some user unexpected errors
-
 
 class RangeError(Exception):
     def __init__(self, message):
@@ -33,31 +31,24 @@ def choose_diagnose():
                         9. Ophthalmic Diseases
                         10. Dermatological Diseases
 
-                        For each symptom answer with (yes, no)
-                        Choose from (1 - 10): """))
+                        Choose from (1 - 10)
+                        """))
             validate_Choice(choose)
-            return choose
         except RangeError as e:
             print(e.message)
     except ValueError:
         print("Only Integer numbers are valid")
 
 
-def processs_data():
-    global disease_categories
-    global disease_symptoms
-    with open('disease_categories.json', 'r') as file:
-        disease_categories = json.load(file)
+with open('disease_categories.json', 'r') as file:
+    disease_categories = json.load(file)
 
-    with open('disease_symptoms.json', 'r') as file:
-        disease_symptoms = json.load(file)
-
+with open('disease_symptoms.json', 'r') as file:
+    disease_symptoms = json.load(file)
 
 if __name__ == "__main__":
-    processs_data()
+    engine = knowledge(disease_categories, disease_symptoms)
     while True:
-        choose = choose_diagnose()
-        engine = knowledge(disease_categories, disease_symptoms, choose)
         engine.reset()
         engine.run()
         answer = input("Diagnoes again?(Y/N): ").strip()

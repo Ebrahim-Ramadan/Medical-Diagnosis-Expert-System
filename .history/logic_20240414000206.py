@@ -8,7 +8,6 @@ class knowledge(KnowledgeEngine):
         self.choice = choice
         self.possibilities = {}
         super().__init__()
-        self.maximum_possible_diseases = []
 
     @DefFacts()
     def _initial_action(self):
@@ -18,6 +17,7 @@ class knowledge(KnowledgeEngine):
     # Major upnormal organ. e.g: Ear, Nose, and Throat (ENT) Diseases
     @Rule(Fact(action="diagnose"), salience=5)
     def disease(self):
+        global maximum_possible_diseases
         category, diseases_list = self.disease_categories[self.choice - 1]
         self.declare(Fact(disease=category))
         for dis in diseases_list:
@@ -27,27 +27,25 @@ class knowledge(KnowledgeEngine):
                     self.possibilities[dis] = 1 + \
                         self.possibilities.get(dis, 0)
 
-        max_value = max(self.possibilities.values())
-        self.maximum_possible_diseases = [
-            key for key, value in self.possibilities.items() if value == max_value]
+        max_value = self.possibilities.values()
+        maximum_possible_diseases = []
+        for key, value in self.possibilities.items():
+            if value == max_value:
+                maximum_possible_diseases.append(key)
 
-        if len(self.maximum_possible_diseases) == 1:
-            self.declare(
-                Fact(probable_disease=self.maximum_possible_diseases[0]))
-        elif len(self.maximum_possible_diseases) == 2:
-            self.declare(
-                Fact(probable_diseases=self.maximum_possible_diseases))
+        if len(maximum_possible_diseases) == 1:
+            self.declare(Fact(probable_disease=maximum_possible_diseases[0]))
+        elif len(maximum_possible_diseases) == 2:
+            self.declare(Fact(probable_diseases=maximum_possible_diseases))
 
     @Rule(Fact(probable_disease=W()), salience=4)
     def matched(self):
-        print(
-            f"The most probable Disease is: {self.maximum_possible_diseases[0]}")
+        print(f"The most probable Disease is: {maximum_possible_diseases[0]}")
 
-    @Rule(Fact(probable_diseases=W()), salience=3)
+    @Rule(Fact(probable_disease=W()), salience=4)
     def matched_diseases(self):
-        print(
-            f"The most probable Diseases are: {self.maximum_possible_diseases}")
+        print(f"The most probable Diseases are: {maximum_possible_diseases}")
 
-    @Rule(NOT(Fact(probable_disease=W())), NOT(Fact(probable_diseases=W())), salience=2)
+    @Rule(NOT(Fact()))
     def not_matched(self):
-        print("Sorry Couldn't determine what is your most probable disease. \nYou can ask a real doctor for such case!\nOr you can diagnose in another specialization")
+        print("Sorry Couldn't determine what is your most probable disease. You can ask a real doctor for such case!\n")

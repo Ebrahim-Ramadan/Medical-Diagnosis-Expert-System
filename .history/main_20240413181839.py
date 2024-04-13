@@ -33,28 +33,23 @@ def choose_diagnose():
                         9. Ophthalmic Diseases
                         10. Dermatological Diseases
 
-                        For each symptom answer with (yes, no)
-                        Choose from (1 - 10): """))
-            validate_Choice(choose)
+                        Choose from (1 - 10)
+                        """))
             return choose
+            validate_Choice(choose)
         except RangeError as e:
             print(e.message)
     except ValueError:
         print("Only Integer numbers are valid")
 
 
-def processs_data():
-    global disease_categories
-    global disease_symptoms
-    with open('disease_categories.json', 'r') as file:
-        disease_categories = json.load(file)
+with open('disease_categories.json', 'r') as file:
+    disease_categories = json.load(file)
 
-    with open('disease_symptoms.json', 'r') as file:
-        disease_symptoms = json.load(file)
-
+with open('disease_symptoms.json', 'r') as file:
+    disease_symptoms = json.load(file)
 
 if __name__ == "__main__":
-    processs_data()
     while True:
         choose = choose_diagnose()
         engine = knowledge(disease_categories, disease_symptoms, choose)

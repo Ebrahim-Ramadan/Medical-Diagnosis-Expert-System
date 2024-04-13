@@ -7,8 +7,8 @@ class knowledge(KnowledgeEngine):
         self.disease_symptoms = disease_symptoms
         self.choice = choice
         self.possibilities = {}
-        super().__init__()
         self.maximum_possible_diseases = []
+        super().__init__()
 
     @DefFacts()
     def _initial_action(self):
@@ -28,8 +28,9 @@ class knowledge(KnowledgeEngine):
                         self.possibilities.get(dis, 0)
 
         max_value = max(self.possibilities.values())
-        self.maximum_possible_diseases = [
-            key for key, value in self.possibilities.items() if value == max_value]
+        for key, value in self.possibilities.items():
+            if value == max_value:
+                self.maximum_possible_diseases.append(key)
 
         if len(self.maximum_possible_diseases) == 1:
             self.declare(
@@ -48,6 +49,6 @@ class knowledge(KnowledgeEngine):
         print(
             f"The most probable Diseases are: {self.maximum_possible_diseases}")
 
-    @Rule(NOT(Fact(probable_disease=W())), NOT(Fact(probable_diseases=W())), salience=2)
+    @Rule(NOT(Fact(probable_disease=W())), salience=2)
     def not_matched(self):
         print("Sorry Couldn't determine what is your most probable disease. \nYou can ask a real doctor for such case!\nOr you can diagnose in another specialization")
