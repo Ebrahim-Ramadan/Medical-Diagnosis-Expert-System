@@ -28,15 +28,13 @@ The project leverages the Experta library, which provides a powerful framework f
 - **Fact-Based Reasoning**: The system utilizes facts to represent user input and intermediate states during the diagnosis process. This allows for flexible reasoning and decision-making based on the available information.
 - **Modularity and Extensibility**: Experta supports modular design, enabling the organization of rules into separate classes or modules based on functionality or domain. This makes it straightforward to scale the system by adding new rules or expanding existing ones.
 
----
-Sure, here's a more detailed explanation:
 
 ## Deployment
 
 ### File System Layout
 
 ```
-expert_system_project/
+Medical-Diagnosis-Expert-System/
 │
 ├── main.py
 ├── logic.py
@@ -60,7 +58,7 @@ expert_system_project/
 1. **Clone the Repository:** Clone the project repository to your local machine using the provided repository URL.
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/OmarEssameldinMousa/Medical-Diagnosis-Expert-System.git
     ```
 
 2. **Install Dependencies:** Navigate to the project directory and install the required dependencies using pip.
@@ -69,16 +67,28 @@ expert_system_project/
     cd expert_system_project
     pip install -r requirements.txt
     ```
+3. **Update Virtual Environment (Urgent Note):** After creating your virtual environment, it's preferred to navigate to the `frozendict` module and make a necessary modification. Navigate to the following directory:
 
-3. **Run the Program:** Execute the main.py script to start the expert system.
+    ```
+    MedicalDiagnosisExpertSystem\venv\Lib\site-packages\frozendict\
+    ```
+
+    Open the `__init__.py` file and add the following line of code at the top:
+
+    ```python
+    from collections.abc import Mapping
+    ```
+
+
+4. **Run the Program:** Execute the main.py script to start the expert system.
 
     ```bash
     python main.py
     ```
 
-4. **Follow On-Screen Prompts:** Follow the prompts displayed by the program to select the organ system and provide symptom information for disease diagnosis.
+5. **Follow On-Screen Prompts:** Follow the prompts displayed by the program to select the organ system and provide symptom information for disease diagnosis.
 
-5. **View Results:** After providing symptom information, the program will display the most probable disease(s) based on the input.
+6. **View Results:** After providing symptom information, the program will display the most probable disease(s) based on the input.
 
 ### Example Usage
 
