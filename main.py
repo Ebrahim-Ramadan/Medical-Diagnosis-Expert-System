@@ -1,9 +1,15 @@
 import json
 from logic import knowledge
 
+
+disease_categories = None
+disease_symptoms = None
+def load_data(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    return data
+    # helper function that takes a file path as an argument, opens the file, loads the JSON data, and returns it.
 # Handleing some user unexpected errors
-
-
 class RangeError(Exception):
     def __init__(self, message):
         self.message = message
@@ -46,11 +52,11 @@ def choose_diagnose():
 def processs_data():
     global disease_categories
     global disease_symptoms
-    with open('disease_categories.json', 'r') as file:
-        disease_categories = json.load(file)
-
-    with open('disease_symptoms.json', 'r') as file:
-        disease_symptoms = json.load(file)
+#check if disease_categories and disease_symptoms are None. If either of them is None, it means the data has not been loaded and cached yet. 
+#If the data is not cached, we call the load_data function for each file and store the loaded data in the respective global variables.
+    if disease_categories is None or disease_symptoms is None:
+        disease_categories = load_data('disease_categories.json')
+        disease_symptoms = load_data('disease_symptoms.json')
 
 
 if __name__ == "__main__":
